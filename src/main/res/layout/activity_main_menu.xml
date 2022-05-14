@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Main_Menu"
+    tools:ignore="DuplicateIds"
+    android:layout_marginTop="0dp">
+
+    <Button
+        android:id="@+id/powrot"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="5dp"
+        android:text="Powrót"
+        android:onClick="go_back"
+        />
+    <TextView
+        android:id="@+id/menutittle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="125dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/na_ratunek"
+        android:textSize="30sp" />
+    <TextView
+        android:id="@+id/menuopis"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="125dp"
+        android:layout_marginTop="10dp"
+        android:text="Edytuj numery osób kontaktowych"
+        android:layout_below="@id/menutittle"
+        android:textSize="30sp"
+        />
+    <TextView
+        android:id="@+id/kontakt1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kontakt nr 1:"
+        android:layout_marginTop="200dp"
+        android:layout_marginLeft="50dp"
+        android:textSize="20sp"
+        />
+    <TextView
+        android:id="@+id/kontakt2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kontakt nr 2:"
+        android:layout_below="@id/kontakt1"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="50dp"
+        android:textSize="20sp"
+        />
+    <TextView
+        android:id="@+id/kontakt3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kontakt nr 3:"
+        android:layout_below="@id/kontakt2"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="50dp"
+        android:textSize="20sp"
+        />
+    <TextView
+        android:id="@+id/kontakt4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kontakt nr 4:"
+        android:layout_below="@id/kontakt3"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="50dp"
+        android:textSize="20sp"
+        />
+    <TextView
+        android:id="@+id/kontakt5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kontakt nr 5:"
+        android:layout_below="@id/kontakt4"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="50dp"
+        android:textSize="20sp"
+        />
+    <EditText
+        android:id="@+id/numer1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/kontakt1"
+        android:hint="podaj numer"
+        android:layout_marginTop="190dp"
+        android:inputType="number"
+        android:layout_marginLeft="10dp"
+        />
+    <EditText
+        android:id="@+id/numer2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/kontakt1"
+        android:hint="podaj numer"
+        android:layout_below="@id/kontakt1"
+        android:layout_marginTop="10dp"
+        android:inputType="number"
+        android:layout_marginLeft="10dp"
+        />
+    <EditText
+        android:id="@+id/numer3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/kontakt1"
+        android:hint="podaj numer"
+        android:layout_below="@id/kontakt2"
+        android:layout_marginTop="10dp"
+        android:inputType="number"
+        android:layout_marginLeft="10dp"
+        />
+    <EditText
+        android:id="@+id/numer4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/kontakt1"
+        android:hint="podaj numer"
+        android:layout_below="@id/kontakt3"
+        android:layout_marginTop="10dp"
+        android:inputType="number"
+        android:layout_marginLeft="10dp"
+        />
+    <EditText
+        android:id="@+id/numer5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/kontakt1"
+        android:hint="podaj numer"
+        android:layout_below="@id/kontakt4"
+        android:layout_marginTop="10dp"
+        android:inputType="number"
+        android:layout_marginLeft="10dp"
+        />
+    <TextView
+        android:id="@+id/trescwiadomosci"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Proszę podac treść wiadomości alarmowej:"
+        android:layout_below="@id/kontakt5"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="15dp"
+        android:textSize="20sp"
+        />
+    <EditText
+        android:id="@+id/trescSMS"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/trescwiadomosci"
+        android:layout_centerHorizontal="true"
+        android:text="@string/wiadomosc"
+        />
+    <Button
+        android:id="@+id/buttonwiadomosci"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="20dp"
+        android:backgroundTint="#008000"
+        android:layout_below="@id/trescSMS"
+        android:layout_marginTop="10dp"
+        android:text="@android:string/ok"
+        android:layout_centerHorizontal="true"
+        android:onClick="save_msg"
+        />
+
+
+
+
+
+
+
+
+</RelativeLayout>

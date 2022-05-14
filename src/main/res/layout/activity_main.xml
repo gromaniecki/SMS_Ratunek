@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/panic"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="0dp"
+    tools:context=".MainActivity"
+    tools:ignore="DuplicateIds">
+    <TextView
+        android:id="@+id/tittle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/menu"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="125dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/na_ratunek"
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/menu"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="5dp"
+        android:text="@string/menu"
+        android:onClick="openListaKontakow"
+        />
+    <TextView
+        android:id="@+id/subtittle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tittle"
+        android:layout_marginTop="30dp"
+        android:text="@string/przyciskpomoc" />
+    <Button
+        android:id="@+id/panic"
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:layout_below="@id/subtittle"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="150dp"
+        android:backgroundTint="#B00020"
+        android:onClick="sendSMS"
+        android:text="@string/help"
+        android:textSize="45sp" />
+    <EditText
+        android:id="@+id/editTextNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/panic"
+        android:layout_centerHorizontal="true"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/type_number"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextNumber"
+        android:layout_centerHorizontal="true"
+        android:autofillHints=""
+        android:ems="10"
+        android:gravity="start|top"
+        android:hint="@string/type_msg"
+        android:inputType="textMultiLine" />
+
+
+
+</RelativeLayout>
