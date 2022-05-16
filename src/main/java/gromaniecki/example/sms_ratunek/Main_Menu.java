@@ -2,7 +2,9 @@ package gromaniecki.example.sms_ratunek;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 
 public class Main_Menu extends AppCompatActivity {
 
@@ -11,4 +13,10 @@ public class Main_Menu extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_menu);
     }
+
+    public void go_back(View view){
+        Intent intent = new Intent(this, MainActivity.class);
+        startActivity(intent);
+    }
+
 }

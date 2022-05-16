@@ -45,4 +45,11 @@ public class MainActivity extends AppCompatActivity {
         mySmsManager.sendTextMessage(number, null, message,null,null);
 
     }
+
+    public void openMain_Menu (View view){
+        Intent intent = new Intent (this, Main_Menu.class);
+        startActivity(intent);
+    }
+
+
 }

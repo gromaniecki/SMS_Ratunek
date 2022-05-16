@@ -13,9 +13,8 @@
         android:layout_width="100dp"
         android:layout_height="50dp"
         android:layout_marginTop="5dp"
-        android:text="Powrót"
         android:onClick="go_back"
-        />
+        android:text="@string/powr_t" />
     <TextView
         android:id="@+id/menutittle"
         android:layout_width="wrap_content"
@@ -32,7 +31,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginStart="125dp"
         android:layout_marginTop="10dp"
-        android:text="Edytuj numery osób kontaktowych"
+        android:text="@string/edytuj_numery_os_b_kontaktowych"
         android:layout_below="@id/menutittle"
         android:textSize="30sp"
         />
