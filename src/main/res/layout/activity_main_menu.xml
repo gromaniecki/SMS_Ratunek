@@ -84,16 +84,16 @@
         android:layout_marginLeft="50dp"
         android:textSize="20sp"
         />
+
     <EditText
         android:id="@+id/numer1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="190dp"
         android:layout_toRightOf="@id/kontakt1"
         android:hint="podaj numer"
-        android:layout_marginTop="190dp"
-        android:inputType="number"
-        android:layout_marginLeft="10dp"
-        />
+        android:inputType="number" />
     <EditText
         android:id="@+id/numer2"
         android:layout_width="wrap_content"
@@ -156,18 +156,18 @@
         android:layout_centerHorizontal="true"
         android:text="@string/wiadomosc"
         />
+
     <Button
         android:id="@+id/buttonwiadomosci"
         android:layout_width="80dp"
         android:layout_height="40dp"
-        android:layout_marginLeft="20dp"
-        android:backgroundTint="#008000"
         android:layout_below="@id/trescSMS"
-        android:layout_marginTop="10dp"
-        android:text="@android:string/ok"
         android:layout_centerHorizontal="true"
-        android:onClick="save_msg"
-        />
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="#008000"
+        android:onClick="saveChanges"
+        android:text="@android:string/ok" />
 
 
 

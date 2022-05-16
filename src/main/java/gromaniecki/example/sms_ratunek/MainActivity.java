@@ -5,7 +5,9 @@ import androidx.core.app.ActivityCompat;
 import androidx.core.content.PackageManagerCompat;
 
 import android.Manifest;
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.content.pm.PackageManager;
 import android.os.Bundle;
 import android.telephony.SmsManager;
@@ -24,6 +26,10 @@ public class MainActivity extends AppCompatActivity {
     private EditText editTextMessage;
     FusedLocationProviderClient fusedLocationProviderClient;
 
+    //shared Preferences
+    SharedPreferences bazaNumerow;
+    SharedPreferences.Editor edytorNumerow;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -35,11 +41,16 @@ public class MainActivity extends AppCompatActivity {
         editTextNumber = findViewById(R.id.editTextNumber);
         //Initialize usedLocationProvider
         fusedLocationProviderClient = LocationServices.getFusedLocationProviderClient(this);
+        // SHARED PREFerences
+        bazaNumerow = getSharedPreferences("gromaniecki.example.sms_ratunek", Context.MODE_PRIVATE);
+        edytorNumerow = bazaNumerow.edit();
+
     }
     public void sendSMS(View view){
 
         String message = editTextMessage.getText().toString();
-        String number = editTextNumber.getText().toString();
+        //String number = editTextNumber.getText().toString();
+        String number = bazaNumerow.getString("numerkontaktowy1","");
 
         SmsManager mySmsManager = SmsManager.getDefault();
         mySmsManager.sendTextMessage(number, null, message,null,null);
@@ -47,9 +58,18 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void openMain_Menu (View view){
+
         Intent intent = new Intent (this, Main_Menu.class);
         startActivity(intent);
     }
 
 
+    public void zapisz(View view) {
+
+            String message = editTextNumber.getText().toString();
+
+            edytorNumerow.putString("numerkontaktowy1", message);
+            edytorNumerow.commit();
+
+    }
 }
