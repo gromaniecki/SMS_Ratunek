@@ -10,6 +10,7 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.pm.PackageManager;
 import android.os.Bundle;
+import android.preference.PreferenceManager;
 import android.telephony.SmsManager;
 import android.view.View;
 import android.widget.Button;
@@ -27,8 +28,8 @@ public class MainActivity extends AppCompatActivity {
     FusedLocationProviderClient fusedLocationProviderClient;
 
     //shared Preferences
-    SharedPreferences bazaNumerow;
-    SharedPreferences.Editor edytorNumerow;
+    public SharedPreferences bazaNumerow;
+    public SharedPreferences.Editor edytorNumerow;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
