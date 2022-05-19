@@ -44,17 +44,17 @@ public class Main_Menu extends AppCompatActivity {
         String[] tablicaKontaktow = {kontakt1.getText().toString(), kontakt2.getText().toString(),
                 kontakt3.getText().toString(), kontakt4.getText().toString(),
                 kontakt5.getText().toString(), message.getText().toString()};
-        /*
-        for (int i=1; i<6; i++){
+
+        for (int i=0; i<5; i++){
             String number = tablicaKontaktow[i];
             String index = "numerkontaktowy"+Integer.toString(i);
             edytorNumerow.putString(index,number);
             edytorNumerow.commit();
-        }*/
+        }
 //DZIALA PONIZEJ NIE RUSZAC
-        String message = kontakt1.getText().toString();
-        edytorNumerow.putString("numerkontaktowy1", message);
-        edytorNumerow.commit();
+        //String message = kontakt1.getText().toString();
+        //edytorNumerow.putString("numerkontaktowy1", message);
+        //edytorNumerow.commit();
         edytorNumerow.putString("message", tablicaKontaktow[5]);
         edytorNumerow.commit();
 

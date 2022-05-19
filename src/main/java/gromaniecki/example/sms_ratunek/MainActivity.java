@@ -51,7 +51,7 @@ public class MainActivity extends AppCompatActivity {
 
         //String message = editTextMessage.getText().toString();
         //String number = editTextNumber.getText().toString();
-        String number = bazaNumerow.getString("numerkontaktowy1","");
+        String number = bazaNumerow.getString("numerkontaktowy0","");
         String message = bazaNumerow.getString("message", "");
 
         SmsManager mySmsManager = SmsManager.getDefault();
