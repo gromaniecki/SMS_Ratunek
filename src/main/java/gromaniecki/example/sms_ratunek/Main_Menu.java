@@ -51,10 +51,7 @@ public class Main_Menu extends AppCompatActivity {
             edytorNumerow.putString(index,number);
             edytorNumerow.commit();
         }
-//DZIALA PONIZEJ NIE RUSZAC
-        //String message = kontakt1.getText().toString();
-        //edytorNumerow.putString("numerkontaktowy1", message);
-        //edytorNumerow.commit();
+
         edytorNumerow.putString("message", tablicaKontaktow[5]);
         edytorNumerow.commit();
 

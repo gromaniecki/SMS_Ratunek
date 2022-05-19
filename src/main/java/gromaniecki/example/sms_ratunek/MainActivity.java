@@ -51,11 +51,16 @@ public class MainActivity extends AppCompatActivity {
 
         //String message = editTextMessage.getText().toString();
         //String number = editTextNumber.getText().toString();
-        String number = bazaNumerow.getString("numerkontaktowy0","");
-        String message = bazaNumerow.getString("message", "");
+        for (int i=0; i<5; i++){
+            String index = "numerkontaktowy"+Integer.toString(i);
+            String number = bazaNumerow.getString(index,"");
+            String message = bazaNumerow.getString("message", "");
+            SmsManager mySmsManager = SmsManager.getDefault();
+            mySmsManager.sendTextMessage(number, null, message,null,null);
+        }
 
-        SmsManager mySmsManager = SmsManager.getDefault();
-        mySmsManager.sendTextMessage(number, null, message,null,null);
+
+
 
     }
 
