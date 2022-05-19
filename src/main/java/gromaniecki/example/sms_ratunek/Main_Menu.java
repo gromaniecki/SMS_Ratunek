@@ -13,7 +13,7 @@ import android.widget.Toast;
 public class Main_Menu extends AppCompatActivity {
     SharedPreferences bazaNumerow;
     SharedPreferences.Editor edytorNumerow;
-    private EditText kontakt1, kontakt2, kontakt3, kontakt4, kontakt5;
+    private EditText kontakt1, kontakt2, kontakt3, kontakt4, kontakt5, message;
     //String kontakt1, message = "Zapisano zmiany";
 
     @Override
@@ -25,6 +25,11 @@ public class Main_Menu extends AppCompatActivity {
         edytorNumerow = bazaNumerow.edit();
 
         kontakt1 = findViewById(R.id.numer1);
+        kontakt2 = findViewById(R.id.numer2);
+        kontakt3 = findViewById(R.id.numer3);
+        kontakt4 = findViewById(R.id.numer4);
+        kontakt5 = findViewById(R.id.numer5);
+        message =  findViewById(R.id.trescSMS);
 
         //kontakt1 = findViewById(R.id.numer1);
 
@@ -36,19 +41,22 @@ public class Main_Menu extends AppCompatActivity {
     }
     public void saveChanges(View view){
 
+        String[] tablicaKontaktow = {kontakt1.getText().toString(), kontakt2.getText().toString(),
+                kontakt3.getText().toString(), kontakt4.getText().toString(),
+                kontakt5.getText().toString(), message.getText().toString()};
+        /*
+        for (int i=1; i<6; i++){
+            String number = tablicaKontaktow[i];
+            String index = "numerkontaktowy"+Integer.toString(i);
+            edytorNumerow.putString(index,number);
+            edytorNumerow.commit();
+        }*/
+//DZIALA PONIZEJ NIE RUSZAC
         String message = kontakt1.getText().toString();
-
         edytorNumerow.putString("numerkontaktowy1", message);
         edytorNumerow.commit();
-
-        //bazaNumerow = getSharedPreferences("gromaniecki.example.sms_ratunek", Context.MODE_PRIVATE);
-        //edytorNumerow = bazaNumerow.edit();
-        //edytorNumerow.putString("numerkontaktowy1", String.valueOf(numer1));
-        //edytorNumerow.commit();
-        //EditText editText1 = (EditText)findViewById(R.id.numer1);
-        //editText1.setHint(String.valueOf(numer1));
-
-
+        edytorNumerow.putString("message", tablicaKontaktow[5]);
+        edytorNumerow.commit();
 
     }
 

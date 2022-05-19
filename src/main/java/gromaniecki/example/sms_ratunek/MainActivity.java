@@ -49,9 +49,10 @@ public class MainActivity extends AppCompatActivity {
     }
     public void sendSMS(View view){
 
-        String message = editTextMessage.getText().toString();
+        //String message = editTextMessage.getText().toString();
         //String number = editTextNumber.getText().toString();
         String number = bazaNumerow.getString("numerkontaktowy1","");
+        String message = bazaNumerow.getString("message", "");
 
         SmsManager mySmsManager = SmsManager.getDefault();
         mySmsManager.sendTextMessage(number, null, message,null,null);
