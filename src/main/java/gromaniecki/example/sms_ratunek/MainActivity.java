@@ -38,8 +38,8 @@ public class MainActivity extends AppCompatActivity {
         // Assign variable
         ActivityCompat.requestPermissions(MainActivity.this, new String[]{Manifest.permission.SEND_SMS, Manifest.permission.READ_SMS},PackageManager.PERMISSION_GRANTED);
 
-        editTextMessage = findViewById(R.id.editText);
-        editTextNumber = findViewById(R.id.editTextNumber);
+        //editTextMessage = findViewById(R.id.editText);
+        //editTextNumber = findViewById(R.id.editTextNumber);
         //Initialize usedLocationProvider
         fusedLocationProviderClient = LocationServices.getFusedLocationProviderClient(this);
         // SHARED PREFerences

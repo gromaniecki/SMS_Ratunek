@@ -6,7 +6,12 @@
     <string name="menu">menu</string>
     <string name="type_msg">type msg.....</string>
     <string name="type_number">type number</string>
-    <string name="przyciskpomoc">Wciśnij przycisk HELP aby uzyskać pomoc</string>
+    <string name="przyciskpomoc">Grzegorz Romaniecki
+    Poniższa aplikacja zaostała stowrzona w celu zaprezentowania w działaniu IDE Android Studio, oraz pokazaniu możliwości jakie ono zapewnia.
+    Klikając w przycisk "MENU" mamy możliwość przejścia do widoku, który odpowiada za zmianę wcześniej predefiniowanych ustawień.
+    Wszystkie zmienne wpisane w tamtym widoku są przechowywane w "SharedPreferences" i są w bardzo łatwy sposób zapisywane w pamięci telefonu w postaci plików .xml.
+    </string>
+
     <string name="wiadomosc">UWAGA!!! Proszę do mnie zadzwonić - sytuacja awaryjna</string>
     <string name="title_activity_menu">Menu</string>
     <!-- Strings used for fragments for navigation -->
@@ -19,4 +24,7 @@
     <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
     <string name="powr_t">Powrót</string>
     <string name="edytuj_numery_os_b_kontaktowych">Edytuj numery osób kontaktowych</string>
+    <string name="sposob">SPOSÓB DZIAŁANIA: Po naciśnięciu przycisku "HELP!" rozpoczyna się procedura alarmowa.
+    Do pięciu wcześniej zdefiniowanych kontaktów zostanie wysłana wiadomość SMS o treści wcześniej zdefiniowanej
+    przez użytkownika. </string>
 </resources>

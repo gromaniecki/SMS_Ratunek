@@ -6,6 +6,7 @@
     android:layout_marginTop="0dp"
     tools:context=".MainActivity"
     tools:ignore="DuplicateIds">
+
     <TextView
         android:id="@+id/tittle"
         android:layout_width="wrap_content"
@@ -22,16 +23,29 @@
         android:layout_width="100dp"
         android:layout_height="50dp"
         android:layout_marginTop="5dp"
-        android:text="@string/menu"
         android:onClick="openMain_Menu"
-        />
+        android:text="@string/menu" />
+
     <TextView
         android:id="@+id/subtittle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/tittle"
+        android:layout_marginLeft="10dp"
         android:layout_marginTop="30dp"
+        android:layout_marginRight="10dp"
         android:text="@string/przyciskpomoc" />
+
+    <TextView
+        android:id="@+id/opisDzialania"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/subtittle"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="10dp"
+        android:text="@string/sposob" />
+
     <Button
         android:id="@+id/panic"
         android:layout_width="300dp"
@@ -43,38 +57,17 @@
         android:onClick="sendSMS"
         android:text="@string/help"
         android:textSize="45sp" />
-    <EditText
-        android:id="@+id/editTextNumber"
+
+    <TextView
+        android:id="@+id/autor"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/panic"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="220dp"
+        android:layout_marginRight="10dp"
         android:layout_centerHorizontal="true"
-        android:autofillHints=""
-        android:ems="10"
-        android:hint="@string/type_number"
-        android:inputType="number" />
-
-    <EditText
-        android:id="@+id/editText"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/editTextNumber"
-        android:layout_centerHorizontal="true"
-        android:autofillHints=""
-        android:ems="10"
-        android:gravity="start|top"
-        android:hint="@string/type_msg"
-        android:inputType="textMultiLine" />
-    <Button
-        android:id="@+id/shared"
-        android:layout_width="100dp"
-        android:layout_height="50dp"
-        android:layout_marginTop="5dp"
-        android:text="zapisz"
-        android:onClick="zapisz"
-        android:layout_below="@id/editText"
-        />
-
+        android:text="2022 Grzegorz Romaniecki AHE w Łodzi odział w Świdnicy" />
 
 
 </RelativeLayout>
