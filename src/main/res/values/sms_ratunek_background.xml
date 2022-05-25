@@ -1,4 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="SMS Ratunek_background">#A4031C</color>
+    <color name="sms_ratunek_background">#FFFFFF</color>
 </resources>
