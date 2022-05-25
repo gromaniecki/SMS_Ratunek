@@ -38,13 +38,16 @@ public class Main_Menu extends AppCompatActivity {
         for (int i=0; i<5; i++){
             String index = "numerkontaktowy"+Integer.toString(i);
             String number = bazaNumerow.getString(index,"00000000");
-            numery_z_bazy[i]=number;
+            numery_z_bazy[i] = number;
         }
+
         kontakt1.setHint(numery_z_bazy[0]);
         kontakt2.setHint(numery_z_bazy[1]);
         kontakt3.setHint(numery_z_bazy[2]);
         kontakt4.setHint(numery_z_bazy[3]);
         kontakt5.setHint(numery_z_bazy[4]);
+        //message.setText(numery_z_bazy[5]);
+        message.setText(bazaNumerow.getString("message", "UWAGA!!! Proszę do mnie zadzwonić - sytuacja awaryjna"));
 
     }
 
