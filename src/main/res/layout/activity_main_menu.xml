@@ -15,6 +15,7 @@
         android:layout_marginTop="5dp"
         android:onClick="go_back"
         android:text="@string/powr_t" />
+
     <TextView
         android:id="@+id/menutittle"
         android:layout_width="wrap_content"
@@ -159,12 +160,11 @@
 
     <Button
         android:id="@+id/buttonwiadomosci"
-        android:layout_width="80dp"
-        android:layout_height="40dp"
-        android:layout_below="@id/trescSMS"
-        android:layout_centerHorizontal="true"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_toRightOf="@id/menutittle"
         android:layout_marginLeft="20dp"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="5dp"
         android:backgroundTint="#008000"
         android:onClick="saveChanges"
         android:text="@android:string/ok" />

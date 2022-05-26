@@ -41,12 +41,11 @@ public class Main_Menu extends AppCompatActivity {
             numery_z_bazy[i] = number;
         }
 
-        kontakt1.setHint(numery_z_bazy[0]);
-        kontakt2.setHint(numery_z_bazy[1]);
-        kontakt3.setHint(numery_z_bazy[2]);
-        kontakt4.setHint(numery_z_bazy[3]);
-        kontakt5.setHint(numery_z_bazy[4]);
-        //message.setText(numery_z_bazy[5]);
+        kontakt1.setText(numery_z_bazy[0]);
+        kontakt2.setText(numery_z_bazy[1]);
+        kontakt3.setText(numery_z_bazy[2]);
+        kontakt4.setText(numery_z_bazy[3]);
+        kontakt5.setText(numery_z_bazy[4]);
         message.setText(bazaNumerow.getString("message", "UWAGA!!! Proszę do mnie zadzwonić - sytuacja awaryjna"));
 
     }
