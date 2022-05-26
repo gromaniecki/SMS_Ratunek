@@ -32,15 +32,11 @@ public class Main_Menu extends AppCompatActivity {
         kontakt5 = findViewById(R.id.numer5);
         message =  findViewById(R.id.trescSMS);
         String numery_z_bazy[] = new String[5];
-
-
-        //kontakt1 = findViewById(R.id.numer1);
         for (int i=0; i<5; i++){
             String index = "numerkontaktowy"+Integer.toString(i);
             String number = bazaNumerow.getString(index,"00000000");
             numery_z_bazy[i] = number;
         }
-
         kontakt1.setText(numery_z_bazy[0]);
         kontakt2.setText(numery_z_bazy[1]);
         kontakt3.setText(numery_z_bazy[2]);
@@ -67,11 +63,8 @@ public class Main_Menu extends AppCompatActivity {
             edytorNumerow.putString(index,number);
             edytorNumerow.commit();
         }
-
         edytorNumerow.putString("message", tablicaKontaktow[5]);
         edytorNumerow.commit();
-
-
     }
 
 }

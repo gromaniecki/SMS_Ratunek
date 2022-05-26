@@ -67,7 +67,7 @@
         android:layout_marginTop="220dp"
         android:layout_marginRight="10dp"
         android:layout_centerHorizontal="true"
-        android:text="2022 Grzegorz Romaniecki AHE w Łodzi odział w Świdnicy" />
+        android:text="@string/_2022_grzegorz_romaniecki_ahe_w_odzi_oddzia_w_widnicy" />
 
 
 </RelativeLayout>
